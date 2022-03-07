@@ -1,0 +1,46 @@
+!SESSION 2022-03-07 16:14:56.031 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 8 amd64-64 Compressed References 20161013_322271 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20161013_1635_B322271
+JIT  - tr.r14.java.green_20161011_125790
+GC   - R28_Java8_SR3_20161013_1635_B322271_CMPRSS
+J9CL - 20161013_322271
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2022-03-07 16:15:35.239
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-03-07 16:15:35.239
+!MESSAGE Cannot bind to an undefined command: plug-in='com.hp.fortify.securityassistant', id='com.devinspect.securityassistant.commands.build'
+
+!ENTRY org.eclipse.jface 2 0 2022-03-07 16:15:42.565
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-07 16:15:42.565
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+F:
+Binding(ALT+CTRL+SHIFT+F,
+	ParameterizedCommand(Command(com.fortify.awb.actions.SelectedIssueAttributesAction,Selected Issue Attributes,
+		,
+		Category(com.fortify.dev.ide.eclipse.actions.category,Fortify Menu Audit Action Set,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@44de23f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.sirius.diagram.ui.find.binding.FindElementAction,Find Element,
+		Find in model,
+		Category(org.eclipse.sirius.common.ui.category,Sirius,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e3ad6179,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2022-03-07 16:15:45.194
+!MESSAGE Referenced part does not exist yet: com.ibm.etools.ui.navigator.SDExplorer.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-07 16:15:52.820
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\jatak'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
